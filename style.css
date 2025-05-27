@@ -1,0 +1,323 @@
+/* Algemene reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  background: white;
+  color: black;
+}
+
+/* Navigatiebalk */
+.navbar {
+  background-color: #0646a8;
+  color:rgb(233, 116, 119);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  border-bottom-left-radius:1rem ;
+  border-bottom-right-radius:1rem ;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  
+  
+}
+ 
+
+
+
+.nav-links a {
+  color:rgb(233, 116, 119);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Raleway', serif;
+ 
+}
+.nav-links li{
+   transition: transform 0.2s ease, font-size 0.2s ease;
+}
+.nav-links li:hover {
+  transform: scale(1.1);
+}
+
+/* Hero sectie */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem 2rem;
+   background-image: url("images/line.png");
+    background-size: 100vw 30vh;
+    background-position: 0% 7rem ;
+    background-repeat: no-repeat;
+}
+
+
+
+.profile-pic {
+  
+  width: 19rem;
+  height: 19rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0rem auto 0rem;
+  background-color: white;
+}
+
+
+
+.intro-text {
+    font-family: 'Raleway', serif;
+  position: relative;
+  font-style: italic;
+  font-size: 1.9rem;
+  top:15rem;
+  right: 7rem;
+}
+.intro-text strong{
+  font-family: 'Great Vibes', cursive;
+}
+
+.scroll-down {
+  display: none;
+ 
+}
+
+/* About sectie */
+.about {
+  padding: 1rem 8rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  font-family: 'Raleway', serif;
+}
+
+#icons img{
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+   
+}
+#works{
+  grid-column: 1/4;
+ 
+}
+#works h2 {
+  text-align: center;
+ font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+
+  margin-top: 2rem;
+ 
+}
+#icons{
+    
+  
+    height: 50vh;
+    width: 95vw;
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr) ;
+    gap: 0rem;
+}
+#icons :nth-child(2){
+    grid-column: 3/4;
+}
+#icons :nth-child(4){
+    grid-column: 6/7;
+}
+#icons :nth-child(5){
+    grid-column: 2/3;
+}
+#icons :nth-child(6){
+    grid-column: 5/6;
+}
+#icons a {
+  text-align: center;
+  
+}
+#icons a {
+   transition: transform 0.2s ease, font-size 0.2s ease;
+}
+#icons a :hover {
+  transform: scale(1.1);
+}
+
+footer{
+    background-color: rgb(0, 72, 156);
+    height: 9vh;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+footer div {
+  display: flex;
+  justify-content:center; /* center de iconen */
+  align-items: center;
+  gap: 1.2rem; /* afstand tussen de iconen */
+  width: 100%;
+  
+}
+footer p a{
+  text-decoration: none;
+}
+
+
+footer p{
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: 0.7rem;
+    color:rgb(244, 178, 49);
+}
+
+footer a{
+  padding-top :0.5rem ;
+  text-align: center;
+  color: rgb(244, 178, 49);
+}
+footer  img{
+  width: 1.7rem;
+  height: 1.7rem;
+  
+}
+
+@media(min-width:1440px){
+
+  .navbar {
+
+    height:15vh ;
+    padding: 1rem 2rem;
+  }
+  .nav-links a {
+  font-size: 1.3rem;
+  }
+  .logo {
+   font-size: 3rem;
+}
+.hero {
+  text-align: center;
+  padding: 2rem 4rem 5rem;  
+  background-image:none;
+   
+
+  grid-column: 2/3;
+ 
+   
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url("images/line.png");
+    background-size: 100vw 75vh;
+    background-position: 0% -2rem ;
+    background-repeat: no-repeat;
+}
+.profile-pic{
+   width: 24rem;
+  height: 24rem;
+}
+
+.intro-text {
+  font-size: 3rem;
+  top:17rem;
+  right: 11rem;
+}
+.about {
+  padding: 2rem 1rem;
+}
+.about h2 {
+  font-size: 5rem;
+  margin-bottom: 0rem;
+  font-style: italic;
+  font-weight:900;
+  text-align: left;
+  
+}
+#works h2 {
+  
+  font-size: 5rem;
+  margin-top: 0rem;
+  
+ 
+}
+.about p {
+  font-size: 2.2rem;
+  text-align: left;
+  padding-right:6rem ;
+  font-weight: 500;
+  text-align: left;
+  line-height: 3rem;
+}
+#icons img{
+    max-width: 15rem;
+    max-height: 15rem;
+   
+}
+.scroll-down{
+  display: inline-block;
+}
+.scroll-down img {
+    margin-top: 3rem;
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.3s ease;
+    animation: bounce 1s ease-in-out infinite;
+    
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* hoe ver hij "springt" */
+    }
+}
+.scroll-down img:hover {
+  transform: scale(1.2); /* vergroot met 20% */
+}
+
+#works{
+  grid-column: 1/4;
+}
+#icons{
+   
+    padding: 2rem;
+    height: 90vh; 
+}
+footer p{
+   
+    font-size: 1.2rem;
+  
+}
+footer  img{
+  width: 3rem;
+  height: 3rem;
+}
+}
