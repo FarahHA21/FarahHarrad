@@ -69,7 +69,6 @@ body {
 }
 
 
-
 .profile-pic {
   
   width: 19rem;
@@ -83,7 +82,7 @@ body {
 
 
 .intro-text {
-    font-family: 'Raleway', serif;
+  font-family: 'Raleway', serif;
   position: relative;
   font-style: italic;
   font-size: 1.9rem;
@@ -118,15 +117,12 @@ body {
   font-family: 'Raleway', serif;
 }
 
-#icons img{
-    max-width: 4.5rem;
-    max-height: 4.5rem;
-   
+#icons img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
-#works{
-  grid-column: 1/4;
- 
-}
+
 #works h2 {
   text-align: center;
  font-family: 'Great Vibes', cursive;
@@ -139,7 +135,7 @@ body {
     
   
     height: 50vh;
-    width: 95vw;
+   
     padding: 0 auto;
     display: grid;
     grid-template-columns: repeat(6,1fr) ;
