@@ -62,7 +62,7 @@ body {
 .hero {
   text-align: center;
   padding: 2rem 1rem 2rem;
-   background-image: url("images/line.png");
+   background-image: url("line.png");
     background-size: 100vw 30vh;
     background-position: 0% 7rem ;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body {
 #icons{
     
   
-    height: 50vh;
+    height: 60vh;
    
     padding: 0 auto;
     display: grid;
@@ -238,7 +238,7 @@ footer  img{
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url("images/line.png");
+    background-image: url("line.png");
     background-size: 100vw 75vh;
     background-position: 0% -2rem ;
     background-repeat: no-repeat;
