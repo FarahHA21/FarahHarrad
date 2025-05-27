@@ -76,6 +76,7 @@ body {
   background-image: url(AVATAR-28.png);
   background-size:  80vw 50vh;
   background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid #f4b231;
   border-radius: 50%;
   margin: 0rem auto 0rem;
