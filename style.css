@@ -16,17 +16,7 @@ body {
 }
 
 /* Navigatiebalk */
-.navbar {
-  background-color: #0646a8;
-  color:rgb(233, 116, 119);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
-  flex-wrap: wrap;
-  border-bottom-left-radius:1rem ;
-  border-bottom-right-radius:1rem ;
-}
+
 
 .logo {
   font-family: 'Great Vibes', cursive;
@@ -43,7 +33,17 @@ body {
  
 
 
-
+.navbar {
+  background-color: #0646a8;
+  color:rgb(233, 116, 119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  border-bottom-left-radius:1rem ;
+  border-bottom-right-radius:1rem ;
+}
 .nav-links a {
   color:rgb(233, 116, 119);
   text-decoration: none;
@@ -58,7 +58,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Hero sectie */
+
 .hero {
   text-align: center;
   padding: 2rem 1rem 2rem;
@@ -87,7 +87,7 @@ body {
   font-style: italic;
   font-size: 1.9rem;
   top:15rem;
-  right: 7rem;
+  right: 0rem;
 }
 .intro-text strong{
   font-family: 'Great Vibes', cursive;
@@ -98,7 +98,7 @@ body {
  
 }
 
-/* About sectie */
+
 .about {
   padding: 1rem 8rem;
   max-width: 600px;
@@ -175,9 +175,9 @@ footer{
 }
 footer div {
   display: flex;
-  justify-content:center; /* center de iconen */
+  justify-content:center;
   align-items: center;
-  gap: 1.2rem; /* afstand tussen de iconen */
+  gap: 1.2rem; 
   width: 100%;
   
 }
@@ -203,6 +203,14 @@ footer  img{
   height: 1.7rem;
   
 }
+@media (min-width:449px){
+ .navbar {
+  
+  justify-content: space-between;
+  
+}
+} 
+  
 
 @media(min-width:1440px){
 
