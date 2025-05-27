@@ -73,7 +73,10 @@ body {
   
   width: 19rem;
   height: 19rem;
-  border: 1px solid black;
+  background-image: url(AVATAR-28.png);
+  background-size: 23vw 50vh;
+  background-position: center;
+  border: 1px solid #f4b231;
   border-radius: 50%;
   margin: 0rem auto 0rem;
   background-color: white;
