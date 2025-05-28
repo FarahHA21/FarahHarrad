@@ -1,0 +1,149 @@
+/* Algemene reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  line-height: 1.6;
+  background: white;
+  color: black;
+}
+
+/* Navigatiebalk */
+.navbar {
+  background-color: #0646a8;
+  color: rgb(233, 116, 119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(233, 116, 119);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Raleway', serif;
+}
+
+.nav-links li {
+  transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+.nav-links li:hover {
+  transform: scale(1.1);
+}
+.blog-post{
+text-align: center;
+height: 80vh;
+margin-top: 2rem;
+margin-left: auto;
+margin-right: auto;
+}
+.blog-post h1{
+font-family: 'Great Vibes', cursive;
+font-size: 4rem;
+}
+
+.blog-post p{
+padding: 0rem 1rem;
+ font-family: 'Raleway', serif;
+}
+.blog-image{
+  width:15rem ;
+  height: 15rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(0, 72, 156);
+  height: 9vh;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Raleway', serif;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 0.7rem;
+  color: rgb(244, 178, 49);
+}
+
+footer a {
+  padding-top: 0.5rem;
+  text-align: center;
+  color: rgb(244, 178, 49);
+}
+
+footer img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+/* Responsieve navigatie */
+@media (min-width: 449px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    height: 15vh;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+    padding-top:1.2rem ;
+  }
+
+  footer img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
