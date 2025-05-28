@@ -67,7 +67,7 @@ font-size: 4rem;
 }
 
 .blog-post p{
-padding: 0rem 25rem;
+padding: 0rem 1rem;
  font-family: 'Raleway', serif;
 }
 .blog-image{
@@ -135,6 +135,10 @@ footer img {
 
   .logo {
     font-size: 3rem;
+  }
+
+  .blog-post p{
+padding: 0rem 25rem;
   }
 
   footer p {
